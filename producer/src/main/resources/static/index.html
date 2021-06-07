@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            margin: 1em;
+        }
+        span.label {
+          display: inline-block;
+          width: 10em;
+          line-height: 200%;
+        }
+
+        span.narrow-label {
+          display: inline-block;
+          margin: 0 0.5em;
+        }
+
+        div.section {
+          border: 1px solid grey;
+          padding: 1em;
+          width: 50em;
+        }
+
+        div#statusMessage {
+            background-color: yellow;
+            width: fit-content;
+        }
+
+        input.small-number {
+            width: 2em;
+         }
+
+        .form-item {
+            display: flex;
+            align-items: center;
+            height: 25px
+        }
+
+        .form-item > div {
+            width: 150px;
+        }
+
+        .kafka-form textarea {
+            width: 100%;
+            height: 300px;
+        }
+
+        .kafka-form .button-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+    </style>
+
+    <script>
+
+        function escapeHTML(text) {
+            return text.replace(/[&<>]/g, (ch) => {
+                return {'&':'&amp;', '>': '&gt;', '<': '&lt;'}[ch];
+            })
+        }
+
+        function showStatus() {
+          const message = new URL(window.location.href).searchParams.get("statusMessage");
+          if (message) {
+            document.getElementById("statusMessage").innerHTML = "Status: " + escapeHTML(message);
+          }
+        }
+
+
+    </script>
+</head>
+<body onload="showStatus();">
+
+<div class="section">
+    <h1>Send message to kafka</h1>
+    <form class="kafka-form" action="/postKafkaMessage">
+        <div class="form-item">
+            <div class="narrow-label">Cantidad de mensages a enviar</div>
+            <input name="count" type="text" value="1">
+        </div>
+        <div class="form-item">
+            <div class="narrow-label">Topico</div>
+            <input name="topic" type="text" value="my-topic">
+        </div>
+        <div class="form-item">
+            <div class="narrow-label">Partición (-1 si no se especifica)</div>
+            <input name="partition" type="text" value="-1">
+        </div>
+        <div>
+            <textarea name="message" type="text" placeholder="message text">message</textarea>
+        </div>
+        <div class="button-footer">
+            <button>Send</button>
+        </div>
+    </form>
+
+</div>
+
+<div id="statusMessage">
+
+</div>
+
+</body>
+</html>

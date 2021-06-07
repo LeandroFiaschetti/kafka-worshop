@@ -1,8 +1,8 @@
 # Getting Started
 
-Este proyecto permitirá generar mensages y consumirlos desde kafka en diferentes topicos configurables para ello se deben seguir los siguientes pasos
+Este proyecto permitirá generar mensajes y consumirlos desde kafka en diferentes topicos configurables para ello se deben seguir los siguientes pasos
 
-## Paso 1: Levantar el broker, zookeeper y el productor de mensages
+## Paso 1: Levantar el broker, zookeeper y el productor de mensajes
 
 [broker, zookeeper y el productor](https://github.com/LeandroFiaschetti/kafka-worshop/tree/master/consumer)
 

@@ -4,8 +4,8 @@ Este proyecto permitirá generar mensages y consumirlos desde kafka en diferente
 
 ## Paso 1: Levantar el broker, zookeeper y el productor de mensages
 
-https://github.com/LeandroFiaschetti/kafka-worshop/tree/master/consumer
+[Consumidor](https://github.com/LeandroFiaschetti/kafka-worshop/tree/master/consumer)
 
 ## Paso 2: Levantar los consumidores
 
-https://github.com/LeandroFiaschetti/kafka-worshop/tree/master/consumer
+[Consumidor](https://github.com/LeandroFiaschetti/kafka-worshop/tree/master/consumer)

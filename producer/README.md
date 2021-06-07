@@ -6,7 +6,7 @@ Este proyecto se encarga de enviar mensages a un broker kafka
 ## Preparación
 
 Antes de ejecutar esta aplicación es necesario levantar una instancia de zookeeper y kafka. 
-Para ello se debe ejecutar el siguiente comando desde la líena de comandos.
+Para ello se debe ejecutar el siguiente comando desde la líena de comandos (en la raiz del proyecto)
 
 ```bash
 docker-compose up -d

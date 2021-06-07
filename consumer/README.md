@@ -1,6 +1,6 @@
 # Getting Started
 
-Este proyecto se encarga de consumir los mensages a un broker kafka a un topico especifico
+Este proyecto se encarga de consumir los mensajes a un broker kafka a un topico especifico
 
 
 ## Preparación
@@ -26,7 +26,7 @@ La aplicación puede ser iniciada desde un IDE ejecutando la clase com.leandro.P
 mvn spring-boot:run
 ```
 
-## Enviar mensages
+## Enviar mensajes
 
 modificar el archivo application.properties, con la url del broker y el topico creado. Luego identificar el consumidor con un nombre de grupo que se desee.
 

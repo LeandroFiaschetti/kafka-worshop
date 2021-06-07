@@ -1,6 +1,6 @@
 # Getting Started
 
-Este proyecto se encarga de enviar mensages a un broker kafka
+Este proyecto se encarga de enviar mensajes a un broker kafka
 
 
 ## Preparación
@@ -40,6 +40,6 @@ La aplicación puede ser iniciada desde un IDE ejecutando la clase com.leandro.P
 mvn spring-boot:run
 ```
 
-## Enviar mensages
+## Enviar mensajes
 
-Ingresar http://localhost:8082 donde se abrirá una web simple con los datos para enviar mensages al topico creado previamente.
+Ingresar http://localhost:8082 donde se abrirá una web simple con los datos para enviar mensajes al topico creado previamente.
